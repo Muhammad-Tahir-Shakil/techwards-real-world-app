@@ -107,13 +107,13 @@ yarn cypress:open
 >
 > ```json
 > {
->   "baseUrl": "http://localhost:13000",
+>   "baseUrl": "https://techwards-real-world-app.web.app:13000",
 >   /* Omitted for brevity */
 >   "env": {
->     "apiUrl": "http://localhost:13001",
+>     "apiUrl": "https://techwards-real-world-app.web.app:13001",
 >     /* Omitted for brevity */
 >     "codeCoverage": {
->       "url": "http://localhost:13001/__coverage__"
+>       "url": "https://techwards-real-world-app.web.app:13001/__coverage__"
 >     }
 >   },
 >   "experimentalStudio": true
@@ -257,3 +257,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!!
+# techwards-real-world-app
