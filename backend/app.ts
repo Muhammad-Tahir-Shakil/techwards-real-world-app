@@ -28,7 +28,7 @@ import { frontendPort, backendPort } from "../src/utils/portUtils";
 require("dotenv").config();
 
 const corsOption = {
-  origin: `http://localhost:${frontendPort}`,
+  origin: `https://techwards-real-world-app.web.app:${frontendPort}`,
   credentials: true,
 };
 

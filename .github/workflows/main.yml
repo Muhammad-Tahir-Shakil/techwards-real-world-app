@@ -85,7 +85,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: yarn start:ci
-          wait-on: "http://localhost:3000"
+          wait-on: "https://techwards-real-world-app.web.app"
           wait-on-timeout: 120
           browser: chrome
           record: true
@@ -128,7 +128,7 @@ jobs:
         with:
           config: "viewportWidth=375,viewportHeight=667"
           start: yarn start:ci
-          wait-on: "http://localhost:3000"
+          wait-on: "https://techwards-real-world-app.web.app:3000"
           wait-on-timeout: 120
           browser: chrome
           record: true
@@ -172,7 +172,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: yarn start:ci
-          wait-on: "http://localhost:3000"
+          wait-on: "https://techwards-real-world-app.web.app:3000"
           wait-on-timeout: 120
           browser: firefox
           record: true
@@ -217,7 +217,7 @@ jobs:
         with:
           config: "viewportWidth=375,viewportHeight=667"
           start: yarn start:ci
-          wait-on: "http://localhost:3000"
+          wait-on: "https://techwards-real-world-app.web.app:3000"
           wait-on-timeout: 120
           browser: firefox
           record: true
@@ -258,7 +258,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: yarn start:ci
-          wait-on: "http://localhost:3000"
+          wait-on: "https://techwards-real-world-app.web.app:3000"
           wait-on-timeout: 120
           record: true
           parallel: true
