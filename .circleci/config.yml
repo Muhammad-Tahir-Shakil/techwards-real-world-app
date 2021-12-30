@@ -54,7 +54,7 @@ linux-workflow: &linux-workflow
         browser: chrome
         spec: cypress/tests/api/*
         executor: with-chrome-and-firefox
-        wait-on: "http://localhost:3000"
+        wait-on: "https://techwards-real-world-app.web.app"
         yarn: true
         start: yarn start:ci
         record: true
@@ -73,7 +73,7 @@ linux-workflow: &linux-workflow
         browser: chrome
         spec: cypress/tests/ui/*
         executor: with-chrome-and-firefox
-        wait-on: "http://localhost:3000"
+        wait-on: "https://techwards-real-world-app.web.app"
         command-prefix: npx percy exec --
         yarn: true
         start: yarn start:ci
@@ -94,7 +94,7 @@ linux-workflow: &linux-workflow
         spec: cypress/tests/ui/*
         config: "viewportWidth=375,viewportHeight=667"
         executor: with-chrome-and-firefox
-        wait-on: "http://localhost:3000"
+        wait-on: "https://techwards-real-world-app.web.app"
         yarn: true
         start: yarn start:ci
         record: true
@@ -113,7 +113,7 @@ linux-workflow: &linux-workflow
         browser: firefox
         spec: cypress/tests/ui/*
         executor: with-chrome-and-firefox
-        wait-on: "http://localhost:3000"
+        wait-on: "https://techwards-real-world-app.web.app"
         yarn: true
         start: yarn start:ci
         record: true
@@ -133,7 +133,7 @@ linux-workflow: &linux-workflow
         spec: cypress/tests/ui/*
         config: viewportWidth=375,viewportHeight=667
         executor: with-chrome-and-firefox
-        wait-on: "http://localhost:3000"
+        wait-on: "https://techwards-real-world-app.web.app"
         yarn: true
         start: yarn start:ci
         record: true
@@ -191,7 +191,7 @@ windows-workflow: &windows-workflow
           # executor comes from the "windows" orb
           name: win/default
           shell: bash.exe
-        wait-on: "http://localhost:3000"
+        wait-on: "https://techwards-real-world-app.web.app"
         yarn: true
         start: yarn start:ci
         record: true
